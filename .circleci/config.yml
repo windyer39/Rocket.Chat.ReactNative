@@ -148,7 +148,8 @@ commands:
           name: Build App
           command: |
             if [[ $CIRCLE_JOB == "android-build-official" ]]; then
-              ./gradlew bundleOfficialPlayRelease
+              # ./gradlew bundleOfficialPlayRelease
+               ./gradlew bundleOfficialFossRelease
             fi
             if [[ $CIRCLE_JOB == "android-build-experimental" ]]; then
               ./gradlew bundleExperimentalPlayRelease
